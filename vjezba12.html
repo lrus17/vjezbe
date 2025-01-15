@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="adduser.php" method="post">
+
+        <label for="ime">First name*</label><br>
+        <input type="text" name="ime" id="ime" placeholder="Your first name..."> <br>
+
+       <p><label for="prezime">Last name*</label><br>
+        <input type="text" name="prezime" id="prezime" placeholder="Your last name..."> <br></p> 
+
+        <p><label for="email">Your E-mail*</label> <br>
+        <input type="text" name="email" id="email" placeholder="Your E-mail..."> <br></p>
+
+        <p> <label for="country">Country</label><br>
+            <select name="country" id="country"> 
+            <option value="">Croatia</option>
+            <option value="">Serbia</option>
+            <option value="">Montenegro</option>
+            <option value="">Albania</option>
+            <option value="">USA</option>
+            <option value="">Colombia</option>
+            <option value="">Argentina</option>
+        </select></p>
+
+        <p><label for="Message">Message</label> <br>
+            <textarea class="form-control" name="note" id="note" placeholder="Write something..."></textarea>
+            </p>
+
+        <p>
+            <input type="submit" name="send" value="Pošalji">
+            <input type="reset" name="reset" value="Poništi">
+        </p>
+
+    </form>
+</body>
+</html>
