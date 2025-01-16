@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stilovi Teksta</title>
+    <style>
+        /* Stil za naslov */
+        .naslov {
+            text-transform: uppercase; /* Sva slova velika */
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 24px;
+            color: #333;
+            transition: box-shadow 0.3s ease; /* Glatki prijelaz za sjenu */
+        }
+
+        /* Kada se pređe mišem preko naslova */
+        .naslov:hover {
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Dodavanje sjene */
+        }
+
+        /* Stil za prvi odlomak */
+        .prvi-odlomak {
+            letter-spacing: 2px; /* Razmak između slova */
+            word-spacing: 7px; /* Razmak između riječi */
+            text-indent: 50px; /* Uvlaka */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Stil za drugi odlomak */
+        .drugi-odlomak {
+            line-height: 2; /* Razmak između linija unutar odlomka */
+            text-indent: 50px; /* Uvlaka */
+            font-family: 'Macondo', cursive;
+            font-size: 18px;
+            color: #222;
+            margin-top: 20px; /* Razmak između dva odlomka */
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="naslov">Heading</h1>
+    <p class="prvi-odlomak">Ovo je prvi odlomak s razmakom između slova i riječi.</p>
+    <p class="drugi-odlomak">Ovo je drugi odlomak s povećanim razmakom između linija.</p>
+</body>
+</html>
